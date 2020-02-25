@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { toast } from "react-toastify";
 import { List } from "../components/List/index";
 import Book from "../components/Book/index";
+import { Link } from "react-router-dom";
 import API from "../utils/API";
 
 class Saved extends Component {
@@ -38,29 +39,32 @@ class Saved extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-8 col-centered">
-                        <div className="d-flex flex-row bd-highlight mb-3 justify-content-center align-items-center">
-                            {/* <div className="p-2 bd-highlight">
-                                <img
-                                    className="image-250"
-                                    src="/images/img-books-window.jpg"
-                                    alt="React Google Books Search"
-                                />
-                            </div> */}
-                            <div className="p-2 bd-highlight">
-                                <h1 className="heading-title mx-sm-3 mb-2">
-                                    React Google Books Search
-                </h1>
 
-                                <h2 className="heading-subtitle mx-sm-3 mb-2 text-center">
-                                    Showing {count} books in the database.
-                </h2>
+                    <div className="col-4">
+                        <br></br>
+                        <div className="d-flex flex-row bd-highlight mb-3">
+                            <div className="bd-highlight ">
+                                <Link to="/search"><button className="btn bg-primary" style={{ color: "whitesmoke" }}>Back to Search</button></Link>
+
                             </div>
                         </div>
                     </div>
+                    <div className="col-4">
+                        <br></br>
+                        <h2 className="heading-subtitle mx-sm-3 mb-2 text-center"
+                            style={{
+                                color: "whitesmoke",
+                                backgroundColor: "black",
+                                opacity: ".65",
+                                padding: "3px",
+                                borderRadius: "10px"
+                            }}                                >
+                            Displaying {count} book(s) in your saved searches.
+                </h2>
+                    </div>
                 </div>
                 <div className="row">
-                    <div className="col-8 col-centered card-content">
+                    <div className="col-8 card-content">
                         {this.state.books.length ? (
                             <List>
                                 {this.state.books.map(book => (

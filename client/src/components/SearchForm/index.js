@@ -19,9 +19,9 @@ function SearchForm({ q, handleInputChange, handleFormSubmit }) {
             </div>
             <button
                 onClick={handleFormSubmit}
-                style={{ marginLeft: "5px", backgroundColor: "red", color: "whitesmoke" }}
+                style={{ marginLeft: "5px", color: "whitesmoke" }}
                 type="submit"
-                className="btn btn-lg search-button heading-subtitle"
+                className="btn btn-lg bg-primary search-button heading-subtitle"
             >
                 Search
       </button>

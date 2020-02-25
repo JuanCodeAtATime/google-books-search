@@ -9,7 +9,7 @@ class Search extends Component {
     state = {
         books: [],
         q: "",
-        message: "Simply search for books via the Google Books API"
+        message: "Powered by the Awesome Folks AT GOOGLE"
     };
 
     handleInputChange = event => {
@@ -61,9 +61,9 @@ class Search extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row">
-                    <div className="col-10 col-centered">
-                        <div className="d-flex flex-wrap flex-row bd-highlight mb-3 justify-content-center align-items-center">
+                <div className="row" style={{ marginLeft: "-35px" }}>
+                    <div className="col-10">
+                        <div className="d-flex flex-wrap flex-row bd-highlight mb-3">
 
                             <div className="order-sm-1 p-2 bd-highlight">
                                 <br></br>
@@ -81,8 +81,8 @@ class Search extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-10 col-centered card-content mb-4">
-                        <h1 className="heading-title mx-sm-3 mb-2 text-center">Results</h1>
+                    <div className="col-10 card-content mb-4">
+                        <h4 className="text-center" style={{ color: "whitesmoke", fontFamily: "Special Elite" }}>Results</h4>
 
                         {this.state.books.length ? (
                             <List>
