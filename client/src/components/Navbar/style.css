@@ -15,4 +15,9 @@ h2.logo {
   font-family: 'Special Elite', 'Cursive';
 }
 
+#navbarSupportedContent {
+  background-color: black;
+  opacity: .75;
+  z-index: 1000;
+}
  

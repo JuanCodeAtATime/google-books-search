@@ -11,11 +11,11 @@ class Saved extends Component {
     };
 
     componentDidMount() {
-        this.getSavedBooks();
+        this.getBooks();
     }
 
-    getSavedBooks = () => {
-        API.getSavedBooks()
+    getBooks = () => {
+        API.getBooks()
             .then(res =>
                 this.setState({
                     books: res.data
@@ -27,7 +27,7 @@ class Saved extends Component {
     handleBookDelete = async id => {
         const originalBooks = this.state.books;
         try {
-            await API.deleteBook(id).then(res => this.getSavedBooks());
+            await API.deleteBook(id).then(res => this.getBooks());
         } catch (ex) {
             if (ex.response && ex.response.status === 404)
                 toast.error("This book has been deleted.");
