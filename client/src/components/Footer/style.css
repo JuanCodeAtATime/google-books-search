@@ -1,0 +1,22 @@
+.bg-color {
+    background-color: black;
+    opacity: .75;
+    height: 85px;
+    bottom: 0;
+    
+
+  }
+
+  img.mern {
+  width: 6%;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  border: solid black .5px;
+
+  }
+
+  p.byline {
+    margin-top: 0px;
+    font-family: 'Special Elite';
+  }

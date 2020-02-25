@@ -1,0 +1,121 @@
+.brand-title {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 1.25rem;
+  }
+  
+  .heading-title {
+    font-family: "Special Elite";
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.9rem;
+  }
+  
+  .heading-subtitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 0.8rem;
+  }
+  
+  p,
+  .p-article {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+  }
+  
+  .hero-is-fullheight {
+    min-height: 100vh;
+  }
+  .hero-head {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .hero-body {
+    align-items: center;
+    display: flex;
+  }
+  .hero-foot {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .col-centered {
+    float: none;
+    margin: 0 auto;
+  }
+  
+  .card-content {
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: black;
+    opacity: .85;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    color:black;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .save-button,
+  .delete-button,
+  .view-button {
+    background-color: #fff;
+    color: #21569c;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    vertical-align: top;
+    line-height: 1.5;
+    align-items: center;
+    border: 1px solid #21569c;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    user-select: none;
+    text-decoration: none;
+  }
+  
+  .image-250 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: auto;
+  }
+  
+  .image.is-128xauto {
+    margin-left: auto;
+    margin-right: auto;
+    width: 128px;
+    height: auto;
+  }
+  
+  .mockup-content {
+    height: 370px;
+    font-family: 'Special Elite', 'Cursive';
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  footer {
+    bottom: 0;
+    margin-top: 30px;
+
+  }
