@@ -9,7 +9,7 @@ class Search extends Component {
     state = {
         books: [],
         q: "",
-        message: "Powered by the awesome folks at GOOGLE"
+        message: "Nothing found here...Please enter another book title"
     };
 
     handleInputChange = event => {
@@ -19,6 +19,9 @@ class Search extends Component {
         });
     };
 
+    // componentDidMount() {
+    //     this.getGoogleSearchBooks();
+    // }
 
     getGoogleSearchBooks = () => {
         API.getGoogleSearchBooks(this.state.q)
@@ -50,6 +53,7 @@ class Search extends Component {
 
     handleBookSave = id => {
         const book = this.state.books.find(book => book.id === id);
+        toast.error(book.volumeInfo.title + " has been successfully saved!");
 
         API.saveBook({
             googleId: book.id,
@@ -63,6 +67,8 @@ class Search extends Component {
     };
 
     render() {
+        // console.log('books sstate', this.state.books)
+        // console.log('books state length', this.state.books.length)
         return (
             <div className="container">
                 <div className="row" style={{ marginLeft: "-35px" }}>
@@ -88,7 +94,7 @@ class Search extends Component {
                     <div className="col-10 card-content mb-4">
                         <h4 className="text-center" style={{ color: "whitesmoke", fontFamily: "Special Elite" }}>Results</h4>
 
-                        {this.state.books.length ? (
+                        {!!this.state.books ? (
                             <List>
                                 {this.state.books.map(book => (
                                     <Book
@@ -98,7 +104,7 @@ class Search extends Component {
                                         link={book.volumeInfo.infoLink}
                                         authors={book.volumeInfo.authors}
                                         description={book.volumeInfo.description}
-                                        image={book.volumeInfo.imageLinks.thumbnail}
+                                        image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : null}
                                         Button={() => (
                                             <button
                                                 onClick={(e) => this.handleBookSave(book.id)}

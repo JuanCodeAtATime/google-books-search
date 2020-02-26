@@ -14,8 +14,9 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <ToastContainer />
         <section className="hero-is-fullheight">
+          <ToastContainer />
+
           <Router>
             <div className="head-body">
               <NavBar />
@@ -30,9 +31,9 @@ class App extends Component {
           </Router>
           <div className="head-foot">
             <br></br>
-            <Footer />
           </div>
         </section>
+        <Footer />
       </React.Fragment>
     );
   }
