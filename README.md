@@ -2,7 +2,7 @@
 - ```Developer: Juan Rivera```
 - ```Date: February 26, 2020```
 
- ![Juan's Google Books Search](clickey-game/public/images/app-screenshot.PNG)
+ ![Juan's Google Books Search](client/public/app-screenshot.PNG)
 
 ## Overview
 **Google Books Search**  is a ```React```-based Google Books Search application.
