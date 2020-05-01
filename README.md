@@ -29,7 +29,7 @@
 * **API:** [Google Books APIs](https://developers.google.com/books)
 
 ### Demo
-[Click here](https://drive.google.com/file/d/1ufl_TQBJxhSibcO-SbyX4dN3rSNeP04q/view) for a demo of the app's basic functionality and responsiveness.  
+[Click here](https://drive.google.com/file/d/1ufl_TQBJxhSibcO-SbyX4dN3rSNeP04q/view) to see demo of the app's basic functionality and responsiveness.  
 
 ### Deployed Site
 [Click here](https://juan-google-booksearch.herokuapp.com/search) to visit deployed site.
