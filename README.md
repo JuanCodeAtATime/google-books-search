@@ -32,5 +32,5 @@
 [Click here](https://drive.google.com/file/d/1ufl_TQBJxhSibcO-SbyX4dN3rSNeP04q/view) for a demo of the app's basic functionality and responsiveness.  
 
 ### Deployed Site
-*The app has been deployed via Heroku*
-* https://juan-google-booksearch.herokuapp.com/search
+[Click here](https://juan-google-booksearch.herokuapp.com/search) to visit deployed site.
+
