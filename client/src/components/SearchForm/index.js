@@ -4,7 +4,7 @@ import "./style.css";
 function SearchForm({ q, handleInputChange, handleFormSubmit }) {
     return (
         <form className="form-inline">
-            <div className="form-group">
+            <div className="form-group" style={{ marginLeft: "3px" }}>
                 <input
                     className="form-control heading-subtitle "
                     id="Title"
@@ -14,6 +14,7 @@ function SearchForm({ q, handleInputChange, handleFormSubmit }) {
                     name="q"
                     onChange={handleInputChange}
                     size="55"
+                    style={{ letterSpacing: "1.3px" }}
                     required
                 />
             </div>

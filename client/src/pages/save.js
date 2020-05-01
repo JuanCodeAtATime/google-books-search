@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import { List } from "../components/List/index";
 import Book from "../components/Book/index";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import API from "../utils/API";
 
 class Saved extends Component {
@@ -44,7 +46,11 @@ class Saved extends Component {
                         <br></br>
                         <div className="d-flex flex-row bd-highlight mb-3">
                             <div className="bd-highlight ">
-                                <Link to="/search"><button className="btn bg-primary" style={{ color: "whitesmoke" }}>Back to Search</button></Link>
+                                <Link to="/search" style={{ textDecoration: "none", color: "white", fontFamily: "Special Elite" }}>
+                                    <FontAwesomeIcon icon={faArrowAltCircleLeft}
+                                        style={{ color: "white", fontSize: "1.8rem", cursor: "pointer", marginTop: ".3rem" }}
+
+                                    /> Back to Search</Link>
 
                             </div>
                         </div>
@@ -54,8 +60,8 @@ class Saved extends Component {
                         <h2 className="heading-subtitle mx-sm-3 mb-2 text-center"
                             style={{
                                 color: "whitesmoke",
-                                backgroundColor: "black",
-                                opacity: ".65",
+                                backgroundColor: "#189ff0",
+                                fontFamily: "Special Elite",
                                 padding: "3px",
                                 borderRadius: "10px"
                             }}                                >
@@ -64,7 +70,7 @@ class Saved extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-8 card-content">
+                    <div className="col-md-11 col-s-11 col-xs-12 card-content">
                         {this.state.books.length ? (
                             <List>
                                 {this.state.books.map(book => (
@@ -82,7 +88,7 @@ class Saved extends Component {
                                                 className="btn delete-button heading-subtitle ml-2"
                                             >
                                                 Delete
-                      </button>
+                                            </button>
                                         )}
                                     />
                                 ))}

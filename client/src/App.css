@@ -52,9 +52,9 @@
   .card-content {
     padding: 2rem;
     border-radius: 5px;
-    background-color: black;
+    margin: auto 3px;   
     opacity: .85;
-    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    /* box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); */
     color:black;
     max-width: 100%;
     position: relative;
@@ -63,11 +63,17 @@
     overflow-x: auto; 
   }
   
+  button.search-button {
+  font-family: "Special Elite" !important;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: normal;
+  background-color: #189ff0 !important;
+
+  }
   .save-button,
   .delete-button,
-  .view-button {
-    background-color: #fff;
-    color: #21569c;
+  .view-button {   
     cursor: pointer;
     justify-content: center;
     padding-bottom: calc(0.375em - 1px);
@@ -85,6 +91,7 @@
     box-shadow: none;
     display: inline-flex;
     font-size: 1rem;
+    font-family: "Special Elite" !important;
     height: 2.25em;
     user-select: none;
     text-decoration: none;

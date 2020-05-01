@@ -70,29 +70,28 @@ class Search extends Component {
         // console.log('books sstate', this.state.books)
         // console.log('books state length', this.state.books.length)
         return (
-            <div className="container">
-                <div className="row" style={{ marginLeft: "-35px" }}>
-                    <div className="col-10">
-                        <div className="d-flex flex-wrap flex-row bd-highlight mb-3">
+            <div className="container" style={{ marginTop: "3rem" }}>
+                <div className="row">
 
-                            <div className="order-sm-1 p-2 bd-highlight">
-                                <br></br>
-                                <h5 style={{ color: "whitesmoke", fontFamily: "Special Elite" }}>
-                                    Enter Book Title
+                    <div className="mr-auto mb-4">
+                        <h5 style={{ color: "whitesmoke", fontFamily: "Special Elite", marginLeft: "3px" }}>
+                            Enter Book Title
                                 </h5>
 
-                                <SearchForm
-                                    handleInputChange={this.handleInputChange}
-                                    handleFormSubmit={this.handleFormSubmit}
-                                    q={this.state.q}
-                                />
-                            </div>
-                        </div>
+                        <SearchForm
+                            handleInputChange={this.handleInputChange}
+                            handleFormSubmit={this.handleFormSubmit}
+                            q={this.state.q}
+                        />
                     </div>
-                </div>
-                <div className="row">
-                    <div className="col-md card-content">
-                        <h4 className="text-center" style={{ color: "whitesmoke", fontFamily: "Special Elite" }}>Results</h4>
+                    <div className="col-md-11 col-s-11 col-xs-12 card-content" style={{ backgroundColor: "white" }}>
+                        <h4 className="text-center" style={{
+                            color: "black",
+                            fontFamily: "Special Elite",
+                            padding: "5px 5px",
+                            margin: "auto 5px"
+
+                        }}>Results</h4>
 
                         {!!this.state.books ? (
                             <List>
