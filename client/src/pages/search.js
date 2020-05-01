@@ -91,7 +91,7 @@ class Search extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-10 card-content mb-4">
+                    <div className="col-md card-content">
                         <h4 className="text-center" style={{ color: "whitesmoke", fontFamily: "Special Elite" }}>Results</h4>
 
                         {!!this.state.books ? (
@@ -107,6 +107,7 @@ class Search extends Component {
                                         image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : null}
                                         Button={() => (
                                             <button
+                                                style={{ backgroundColor: "green", color: "white" }}
                                                 onClick={(e) => this.handleBookSave(book.id)}
                                                 className="btn save-button  heading-subtitle ml-2"
                                             >

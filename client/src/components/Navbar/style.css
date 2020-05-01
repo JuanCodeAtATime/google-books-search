@@ -3,21 +3,35 @@
     height: 85px;
     line-height: 34px;
     letter-spacing: 0.1em;    
-    opacity: .75;
-    
+    opacity: .75;    
   } 
 
-  nav.center {
+/* .navbar {
+  margin-left: -35px;
+} */
+
+ nav.center {
     text-align: center;
 }
+.navbarText, .nav-link  {
+  color: whitesmoke;
+}
+
+.navbar-right, .navbar-collapse {
+  text-align: right;
+  float: right;
+}
+
 
 h2.logo {
   font-family: 'Special Elite', 'Cursive';
+  margin-top: 1.75rem;
 }
 
-#navbarSupportedContent {
+.collapse {
   background-color: black;
-  opacity: .75;
+  opacity: .85;
   z-index: 1000;
+  display: inline-block;
 }
  

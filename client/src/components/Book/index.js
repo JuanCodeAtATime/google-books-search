@@ -51,6 +51,7 @@ const Book = ({
                                     className="btn view-button heading-subtitle ml-2"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    style={{ backgroundColor: "#189ff0", color: "white" }}
                                 >
                                     View
                 </a>

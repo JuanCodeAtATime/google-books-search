@@ -4,11 +4,13 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
+    "antd": "^4.2.0",
     "axios": "^0.18.1",
     "create-react-app": "^3.4.0",
     "joi-browser": "^13.4.0",
     "lodash": "^4.17.15",
     "react": "^16.6.3",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.1",
