@@ -13,7 +13,7 @@
 * The ```Saved``` page stores and displays all books saved by the user. Here, the user also has the option to "View" the book details on the Google Books site, or remove ("delete") the book from their saved books list.
 
 
-## Installation Steps
+### Installation Steps
 1. Git clone with HTTPS to your local machine ```https://github.com/JuanCodeAtATime/google-books-search.git```.
 2. In google-books-search folder (root directory), run ```npm install``` to install back-end dependencies.  
 3. Then,  ```cd client && npm install``` to install front-end dependencies.  
