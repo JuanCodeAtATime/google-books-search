@@ -8,9 +8,9 @@
 **Google Books Search**  is a full-stack MERN application that features book data storage, a clean UI, and a search engine powered by Google Books.  
 
 ### Features
-* This is a two-page application.  The main page is the Search page.  Here, users can search for books via the search engine powered by [Google Books APIs](https://developers.google.com/books).  The search results are displayed in a list for the user.  There, they have the option to "View" the book's details via the Google Books page, or "Save" the book, which saves the book to their saved books list.
+* This is a two-page application.  The main page is the Search page.  Here, users can search for books via the search engine powered by [Google Books APIs](https://developers.google.com/books).  The search results are displayed in a list for the user.  There, they have the option to "View" book details via the Google Books website.  Or, they can "Save" the book to their saved books list.
 
-* The ```Saved Books``` page stores and displays all books saved by the user. Here, the user also has the option to "View" the book details on the Google Books site, or remove ("delete") the book from their saved books list.
+* The ```Saved Books``` page stores and displays all books saved by the user. Here, the user can also "View" the book details on the Google Books website or remove ("delete") the book from their list.
 
 
 ### Installation Steps
