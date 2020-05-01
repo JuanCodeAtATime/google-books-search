@@ -16,7 +16,7 @@
 ## Installation Steps
 1. Git clone with HTTPS to your local machine ```https://github.com/JuanCodeAtATime/google-books-search.git```.
 2. In google-books-search folder (root directory), run ```npm install``` to install back-end dependencies.  
-3. Then,  ```cd client``` and run ```npm install``` to install front-end dependencies.  
+3. Then,  ```cd client && npm install``` to install front-end dependencies.  
 4. Go back to root directory by running ``` cd .. ```.
 5. Lastly, run ```npm run start``` to launch in your browser.
 
