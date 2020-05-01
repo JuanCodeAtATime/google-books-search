@@ -111,7 +111,7 @@ class Search extends Component {
                                                 className="btn save-button  heading-subtitle ml-2"
                                             >
                                                 Save
-                      </button>
+                                            </button>
                                         )}
                                     />
                                 ))}
