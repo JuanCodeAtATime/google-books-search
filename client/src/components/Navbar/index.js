@@ -11,11 +11,11 @@ const NavBar = () => {
     return (
         <React.Fragment>
             <div style={{ backgroundColor: "#189ff0" }}>
-                <Navbar bg="transparent" expand="lg" top="sticky" className="navbar ml-auto col-11">
+                <Navbar bg="transparent" expand="lg" className="navbar ml-auto col-11">
                     <Navbar.Brand href="#home"><h2 className="logo">Google Book Search</h2></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="navitems ml-auto col-5">
+                        <Nav className="navitems ml-auto col-4 mt-2">
                             {/* <Link to="/search" style={{ marginRight: "1rem" }}>
                             <FontAwesomeIcon icon={faSearch}
                                 style={{ color: "white", fontSize: "2rem", marginBottom: "1rem", cursor: "pointer" }}
@@ -26,13 +26,14 @@ const NavBar = () => {
                             <Link to="/saved" style={{
                                 textDecoration: "none",
                                 color: "white",
+                                textAlign: "right"
 
                             }}>
                                 <FontAwesomeIcon icon={faBook}
 
                                     style={{
                                         color: "white",
-                                        fontSize: "1.5rem",
+                                        fontSize: "1.2rem",
                                         cursor: "pointer",
                                     }}
                                     data-tip="Saved books"
@@ -41,7 +42,7 @@ const NavBar = () => {
                                 <span id="span" style={{
                                     color: "white",
                                     fontFamily: "Special Elite",
-                                    fontSize: "1.2rem",
+                                    fontSize: "1rem",
                                     marginLeft: ".5rem"
                                 }}>Saved Books</span>
                             </Link>

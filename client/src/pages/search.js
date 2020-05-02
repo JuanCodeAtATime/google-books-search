@@ -84,7 +84,12 @@ class Search extends Component {
                             q={this.state.q}
                         />
                     </div>
-                    <div className="col-md-11 col-s-11 col-xs-12 card-content" style={{ backgroundColor: "white" }}>
+                    <div className="col-md-11 col-s-11 col-xs-12 card-content"
+                        style={{
+                            backgroundColor: "white",
+                            paddingTop: "1rem"
+
+                        }}>
                         <h4 className="text-center" style={{
                             color: "black",
                             fontFamily: "Special Elite",

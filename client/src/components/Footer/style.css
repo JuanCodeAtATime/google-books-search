@@ -1,8 +1,8 @@
 .bg-color {
-    background-color: black;
-    opacity: .75;
-    height: 85px;
+    background-color:#189ff0;    
+    height: 60px;
     bottom: 0;
+    padding: 1rem;
     
 
   }
@@ -16,7 +16,7 @@
 
   }
 
-  p.byline {
-    margin-top: 0px;
+  .byline {
+    margin-top: 2rem;
     font-family: 'Special Elite';
   }

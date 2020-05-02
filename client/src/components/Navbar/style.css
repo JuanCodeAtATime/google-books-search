@@ -4,6 +4,7 @@ h2.logo {
   padding-bottom: 0;
   color: white; 
   margin-left: -10px;
+  font-size: 1.55rem;
 } 
 .navbar {  
   width: 100%; 
@@ -16,6 +17,10 @@ h2.logo {
  #basic-navbar-nav {
 
   float: right;
+ }
+
+ button.basic-navbar-nav {
+  margin-bottom: 3rem;
  }
   
 /* .navbar-dark {

@@ -42,9 +42,9 @@ class Saved extends Component {
             <div className="container">
                 <div className="row">
 
-                    <div className="col-4">
+                    <div className="col-md-11">
                         <br></br>
-                        <div className="d-flex flex-row bd-highlight mb-3">
+                        <div className="mb-3">
                             <div className="bd-highlight ">
                                 <Link to="/search" style={{ textDecoration: "none", color: "white", fontFamily: "Special Elite" }}>
                                     <FontAwesomeIcon icon={faArrowAltCircleLeft}
@@ -53,24 +53,35 @@ class Saved extends Component {
                                     /> Back to Search</Link>
 
                             </div>
+                            <h2 className="heading-subtitle mb-2 ml-auto"
+
+                                style={{
+                                    marginTop: ".8rem",
+                                    color: "whitesmoke",
+                                    backgroundColor: "#189ff0",
+                                    fontFamily: "Special Elite",
+                                    alignContent: "right",
+                                    padding: "3px",
+                                    borderRadius: "5px",
+                                    fontSize: "1.1rem"
+                                }}                                >
+                                Displaying <span style={{
+                                    backgroundColor: "black",
+                                    padding: "2px",
+                                    paddingTop: "2px",
+                                    borderRadius: "2px",
+                                    textAlign: "center",
+                                    lineHeight: "3px",
+                                    position: "center"
+                                }}>{count}</span> book(s) in your saved searches.
+</h2>
                         </div>
                     </div>
-                    <div className="col-4">
-                        <br></br>
-                        <h2 className="heading-subtitle mx-sm-3 mb-2 text-center"
-                            style={{
-                                color: "whitesmoke",
-                                backgroundColor: "#189ff0",
-                                fontFamily: "Special Elite",
-                                padding: "3px",
-                                borderRadius: "10px"
-                            }}                                >
-                            Displaying {count} book(s) in your saved searches.
-                </h2>
-                    </div>
+
                 </div>
-                <div className="row">
-                    <div className="col-md-11 col-s-11 col-xs-12 card-content">
+                <div className="row" fixed="top">
+                    <div className="col-md-11 col-s-11 col-xs-12 card-content" style={{ padding: ".75rem" }} >
+
                         {this.state.books.length ? (
                             <List>
                                 {this.state.books.map(book => (
